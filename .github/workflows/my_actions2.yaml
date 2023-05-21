@@ -1,16 +1,17 @@
 name: Creative workflows1
 
 on:
-   pull_request:
-     branches:
-          -master
-jobs:
-    perform-action:
-          runs-on: ubuntu-latest
-          steps:
-          - name: First interaction
-            uses: actions/first-interaction@v1.1.1
-            with :
-            pr-message: 'Thanks for your contribution.
+  pull_request:
+    branches:
+      - master
 
-            Remember-The measure of intelligence is the ability to change'
+jobs:
+  perform-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First interaction
+        uses: actions/first-interaction@v1.1.1
+        with:
+          pr-message: 'Thanks for your contribution.
+
+          Remember - The measure of intelligence is the ability to change'

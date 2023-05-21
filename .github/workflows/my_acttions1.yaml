@@ -1,0 +1,14 @@
+name: Creative workflows2
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  perform-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello developer, you have pushed successfully."
+        shell: bash
